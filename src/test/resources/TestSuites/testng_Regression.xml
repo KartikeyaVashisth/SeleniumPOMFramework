@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Hub Spot Test Suite" verbose="1">
+    
+    <listeners>
+        <listener class-name="com.qa.hubspot.listeners.ExtentReportListener" />
+    </listeners>
+
+	<test name="hub spot Regression Test">
+		<classes>
+			<class name="com.qa.hubspot.tests.LoginTest" />
+			<class name="com.qa.hubspot.tests.HomePageTest" />
+			<class name="com.qa.hubspot.tests.ContactsPageTest" /> <!-- to comment contol+shift+forward slash -->
+		</classes>
+		
+		<packages>
+		   <package>name = "com.qa.hubspot.tests.*"</package> <!--* will take all the tests under this package  --> 
+		</packages>
+	</test>
+</suite>
